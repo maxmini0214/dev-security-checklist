@@ -89,6 +89,7 @@ footer{text-align:center;padding:30px 0;border-top:1px solid var(--border);margi
   .controls{flex-direction:column}
 }
 </style>
+<script data-goatcounter="https://maxdevtools.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <div class="container">
@@ -338,7 +339,8 @@ const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=
 
 function exportPDF(){
 const w=window.open('','_blank');
-let html=`<html><head><title>Security Checklist</title><style>body{font-family:system-ui;max-width:800px;margin:20px auto;font-size:14px}h1{color:#0a0e17}h2{margin-top:20px;border-bottom:1px solid #ddd;padding-bottom:4px}.item{margin:6px 0}.cb{display:inline-block;width:14px;height:14px;border:1.5px solid #333;border-radius:2px;vertical-align:middle;margin-right:6px;text-align:center;font-size:11px;line-height:14px}.cb.checked{background:#00aa55;color:#fff;border-color:#00aa55}.sev{font-size:11px;font-weight:700;padding:1px 6px;border-radius:8px;margin-left:6px}.critical{background:#fee;color:#c00}.high{background:#fff3cd;color:#856404}.medium{background:#cce5ff;color:#004085}.low{background:#d4edda;color:#155724}.desc{color:#666;font-size:12px;margin-left:22px}</style></head><body>`;
+let html=`<html><head><title>Security Checklist</title><style>body{font-family:system-ui;max-width:800px;margin:20px auto;font-size:14px}h1{color:#0a0e17}h2{margin-top:20px;border-bottom:1px solid #ddd;padding-bottom:4px}.item{margin:6px 0}.cb{display:inline-block;width:14px;height:14px;border:1.5px solid #333;border-radius:2px;vertical-align:middle;margin-right:6px;text-align:center;font-size:11px;line-height:14px}.cb.checked{background:#00aa55;color:#fff;border-color:#00aa55}.sev{font-size:11px;font-weight:700;padding:1px 6px;border-radius:8px;margin-left:6px}.critical{background:#fee;color:#c00}.high{background:#fff3cd;color:#856404}.medium{background:#cce5ff;color:#004085}.low{background:#d4edda;color:#155724}.desc{color:#666;font-size:12px;margin-left:22px}</style><script data-goatcounter="https://maxdevtools.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head><body>`;
 html+=`<h1>🛡️ Developer Security Checklist</h1><p>Generated: ${new Date().toLocaleDateString()}</p>`;
 DATA.forEach((cat,ci)=>{
 html+=`<h2>${cat.icon} ${cat.cat}</h2>`;
